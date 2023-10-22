@@ -1,0 +1,19 @@
+{% extends 'index.html'%}
+{% block content %}
+{%load static%}
+  <!-- project section -->
+<div class = "grid-size">
+  <div class="grid-container">
+    {%for item in items%}
+      <div class="grid-item">
+        <a href="{% url 'cart' item.id %}">
+          <img src = {{item.content_image.url}}/><br>
+        </a>
+        <span><strong>{{item.title}}</strong></span><br>
+        <span>{{item.description|truncatechars:30}}</span>
+      </div>
+    {%endfor%}
+  </div>
+</div>
+  <!-- end project section -->
+{%endblock%}

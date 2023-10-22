@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!--chrome, Firefox Os and Opera-->
+  <meta name="theme-color" content="#293a4a">
+  <!--Mobile Chrome-->
+  <meta name="mobile-web-app-cable" content="yes">
+  <meta name="mobile-web-app-status-bar-style" content="default">
+  <!--Ios Safari-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content>
+  <meta name="referrer" content="origin">
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+  <title>2023WECAWheats</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css'%}" rel="stylesheet" />
+
+  <link href="{% static 'css/main-style.css'%}" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css'%}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="{% url 'index'%}">
+              <img src="{% static 'images/logo.png'%}" alt="">
+            </a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'index'%}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'service'%}">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about'%}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'project'%}"> Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'testimonial'%}">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact'%}">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'ourterm'%}"> Our Team</a>
+                </li>
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    {%block content%}
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      WEST AND CENTRAL AFRICA <br>
+                      WHEAT SUMMIT
+                    </h1>
+                    <div class="btn-box">
+                      <a href="{% url 'contact'%}" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="{% url 'about'%}" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      WEST AND CENTRAL AFRICA <br>
+                      WHEAT SUMMIT
+                    </h1>
+                    <div class="btn-box">
+                      <a href="{% url 'contact'%}" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="{% url 'about'%}" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      WEST AND CENTRAL AFRICA <br>
+                      WHEAT SUMMIT
+                    </h1>
+                    <div class="btn-box">
+                      <a href="{% url 'contact'%}" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="{% url 'about'%}" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      WEST AND CENTRAL AFRICA <br>
+                      WHEAT SUMMIT
+                    </h1>
+                    <div class="btn-box">
+                      <a href="{% url 'contact'%}" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="{% url 'about'%}" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      WEST AND CENTRAL AFRICA <br>
+                      WHEAT SUMMIT
+                    </h1>
+                    <div class="btn-box">
+                      <a href="{% url 'contact'%}" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="{% url 'about'%}" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="#customCarousel1" data-slide-to="3"></li>
+          <li data-target="#customCarousel1" data-slide-to="4"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Services
+          </h2>
+          <p>
+            The West and Central Africa Wheat Collaborative Network offers a range of comprehensive services aimed at advancing wheat productivity, production, and farmers' income using appropriate technologies, as well as fostering wheat investment across the region
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/s1.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Technology Adoption
+                  and Transfer
+                </h5>
+                <p>
+                  Facilitating the adoption and transfer of appropriate agricultural technologies to farmers, enabling
+                  them to leverage modern methods for enhanced wheat cultivation, harvesting, and post-harvest handling.
+                </p>
+                <a href="{% url 'service'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/s2.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Training and 
+                  Capacity Building
+                </h5>
+                <p>
+                  Organizing workshops, training sessions, and educational programs to build the capacity of farmers 
+                  and stakeholders. This includes training in modern farming techniques, sustainable practices, and 
+                  the effective use of technology
+                  </p>
+                <a href="{% url 'service'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Research and 
+                  Development
+                </h5>
+                <p>
+                  Conducting research and development initiatives to improve wheat varieties, pest and disease 
+                  management, soil health, and climate-resilient agricultural practices.
+                  </p>
+                <a href="{% url 'service'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/s4.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Policy Advocacy
+                  and Support
+                </h5>
+                <p>
+                  Engaging with policymakers and advocating for policies that support the wheat industry's growth and
+                  sustainability. This includes providing policy recommendations based on research and the collective 
+                  expertise of stakeholders.
+                  </p>
+                <a href="{% url 'service'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              The West and Central Africa Wheat Collaborative Network (WECAWheat) is a Non-Profit organization of various 
+              Wheat stakeholders from West and Central Africa, Created on March 2023 with the overarching goal of enhancing 
+              wheat productivity, production and farmer's income using appropriate technologies and to boost wheat investment
+              in the wheat sector in West and Central Africa
+            </p>
+            <a href="{% url 'about'%}">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg'%}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+
+  <!-- Our Team section -->
+
+  <section class="project_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Team
+        </h2>
+      </div>
+        <div class="owl-carousel project_carousel">
+          <div class="item painting">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 1.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Prof. Vincent Ado Tenebe
+                </h5>
+                <p>
+                  
+                </p>Professor of Agronomy, Faculty of Agriculture, National Open Universiy of Nigeria (NOUN).<br>
+                CHAIRMAN 
+              </div>
+            </div>
+          </div>
+          <div class="item reconstruction">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 2.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Alhaji Olalekan Saliu
+                </h5>
+                <p>
+                  Executive Secretary , Flour Milling Association of Nigeria (FMAN)<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item repair">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 3.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Prof Johnson Ehima Onyibe 
+                </h5>
+                <p>
+                  Professor, Extension Agronomy, Policy and Agribusiness Specialist<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item residential">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 4.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dr. Solomon Assefa Gizaw
+                </h5>
+                <p>
+                  Head, Technologies for African Agricultural Transformation (TAAT) <br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item styling">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 5.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Honorable Munir Babba Danagundi
+                </h5>
+                <p>
+                  Legislature,/Wheat Agribusiness<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item styling">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 6.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dr. Sc. Amadou Tidiane Sall
+                </h5>
+                <p>
+                  Senior Research Scientist (Wheat Breeding), Senegalese Institute of Agricultural Research (ISRA)<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item styling">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 7.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mr. Alain Sy Traore
+                </h5>
+                <p>
+                  Agronomist, Director, Agricultural and Rural Development, Economics Community of West African Students (ECOWAS)<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item styling">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/member 8.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Prof. Christopher Tankou
+                </h5>
+                <p>
+                  Professor of Systems Agronomy, Department of crop science, University of DSCHANG<br>
+                  MEMBER
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end project section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client2.jpeg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Dr. Ahmed M
+                        </h5>
+                        <h6>
+                          Researcher
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Collaborating with WECAWheats has been enlightening. Our research efforts are given a real-world
+                      platform to make a difference. The network's dedication to advancing wheat research and 
+                      technology adoption is inspiring and impactful.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client3.jpg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Amina S
+                        </h5>
+                        <h6>
+                          Farmer
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Being a part of WECAWheats has transformed my wheat farm. The training and support I received 
+                      helped me adopt modern techniques, resulting in significantly higher yields and better income.
+                      I'm grateful for the knowledge and empowerment they provided
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client1.jpeg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Pierre L
+                        </h5>
+                        <h6>
+                          Market Access
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      WECAWheats connected me with reliable buyers for my wheat. The market access support boosted my 
+                      sales and income. They truly care about helping farmers succeed in the market
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel2" data-slide-to="1"></li>
+        <li data-target="#customCarousel2" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- why us section -->
+
+  <section class="why_us_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us?
+        </h2>
+      </div>
+      <div class="why_us_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/w1.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Expertise and Focus
+            </h5>
+            <p>
+              WECAWheat is dedicated to wheat production and the improvement of farmers livelihood in West and
+              Central Africa. Our organization's specialized focus ensures deep understanding of the challenges
+              and opportunities specific to this region. Our initiatives are designed to have a tangible, 
+              positive impact on wheat productivity, production, and ultimately, farmers' income
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/w3.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Collaborative Approach
+            </h5>
+            <p>
+              We bring together various stakeholders, fostering collaboration and knowledge sharing among experts,
+              farmers, industry players, and researchers. This collaborative approach amplifies our collective 
+              impact and allows for the implementation of comprehensive, multifaceted solutions.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/w2.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Innovative Technologies
+            </h5>
+            <p>
+              WECAWheat leverages cutting-edge, appropriate technologies tailored to the West and Central African 
+              context. By staying at the forefront of advancements, we enable farmers to optimize their production, 
+              reduce inefficiencies, and increase yields sustainably. Together, we can achieve a future of enhanced 
+              wheat productivity, increased income, and a more prosperous agricultural sector.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="{% url 'about' %}">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why us section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-bottom">
+    <div class="container-fluid">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="heading_container">
+          <h2>
+            Contact Us
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+{%endblock%}
+  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +234 806 568 2620
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            info@wecawheats.org
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Abuja-Nigeria
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row info_main_row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="{% url 'index'%}">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="{% url 'service'%}">Services</a>
+                <a class="" href="{% url  'about' %}"> About</a>
+                <a class="" href="{% url 'project'%}">Project</a>
+                <a class="" href="{% url 'testimonial'%}">Testimonial</a>
+                <a class="" href="{% url 'contact'%}">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>
+                MEMBER-COUNTRIES
+              </h5>
+              <div style="column-count: 2;">
+                <p10>Benin</p10><br>
+                <p10>Burkina Faso</p10><br>
+                <p10>Cameroon</p10><br>
+                <p10>Chad</p10><br>
+                <p10>Congo</p10><br>
+                <p10>Gambia</p10><br>
+                <p10>Ghana</p10><br>
+                <p10>Mali</p10><br>
+                <p10>Niger</p10><br>
+                <p10>Nigeria</p10><br>
+                <p10>Senegal</p10><br>
+                <p10>Togo</p10>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="info_logo">
+              <a href="">
+                <img src="{% static 'images/logo2.png'%}" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="social_box">
+              <a href="facebook.com">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="twitter.com">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="fa-linkedin.com">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="instagram.com">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="">Lazy Programmer</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js'%}"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js'%}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var mySwiper = new Swiper('.swiper-container', {
+          loop: true, // Enable loop mode if needed
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+      });
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

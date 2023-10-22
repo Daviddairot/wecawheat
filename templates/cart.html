@@ -1,0 +1,32 @@
+{% extends 'index.html'%}
+{%block content%}
+{%load static%}
+<br><br><br>
+<div class = "to">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="{{items.content_1.url}}" alt="Image 0"/><br>
+				<span><strong>{{items.title1}}</strong></span><br>
+				<span>{{items.description1}}</span>
+			</div>
+			<div class="swiper-slide"><img src="{{items.content_2.url}}" alt="Image 1"/><br>				
+				<span><strong>{{items.title2}}</strong></span><br>
+				<span>{{items.description2}}</span></div>
+			<div class="swiper-slide"><img src="{{items.content_3.url}}" alt="Image 2"/><br>
+				<span><strong>{{items.title3}}</strong></span><br>
+				<span>{{items.description3}}</span>
+			</div>
+			<div class="swiper-slide"><img src="{{items.content_4.url}}" alt="Image 3"/><br>
+				<span><strong>{{items.title4}}</strong></span><br>
+				<span>{{items.description4}}</span>
+			</div>
+
+			<!-- Add more swiper-slide elements for additional images -->
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div> 
+{%endblock%}

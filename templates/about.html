@@ -1,0 +1,39 @@
+{%extends 'index.html'%}
+{%block content%}
+{%load static%}
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              The West and Central Africa Wheat Collaborative Network (WECAWheat) is a Non-Profit organization of various 
+              Wheat stakeholders from West and Central Africa, Created on March 2023 with the overarching goal of enhancing 
+              wheat productivity, production and farmer's income using appropriate technologies and to boost wheat investment
+              in the wheat sector in West and Central Africa
+            </p>
+            <a href="{% url 'about'%}">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+{%endblock%}
